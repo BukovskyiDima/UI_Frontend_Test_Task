@@ -1,3 +1,4 @@
-import { TeamList } from './TeamList';
+import { TeamList, ITeamList } from './TeamList';
 
+export type { ITeamList };
 export default TeamList;

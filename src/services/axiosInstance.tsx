@@ -9,6 +9,7 @@ const axiosInterceptors = (axiosInstance: AxiosInstance) => {
 export const getAxiosInstance = (): AxiosInstance => {
   return axiosInterceptors(
     axios.create({
+      baseURL: 'http://localhost:3000/',
       timeout: 300000,
     }),
   );

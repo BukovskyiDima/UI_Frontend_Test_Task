@@ -1,12 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { Box, IconButton, Tooltip, Typography } from '@mui/material';
-import { DataGrid, GridRenderCellParams, GridRowId } from '@mui/x-data-grid';
-import AddIcon from '@mui/icons-material/Add';
+import { Box, Tooltip, Typography } from '@mui/material';
+import { DataGrid, GridRenderCellParams } from '@mui/x-data-grid';
+// import AddIcon from '@mui/icons-material/Add';
 import FaceRetouchingOffIcon from '@mui/icons-material/FaceRetouchingOff';
 
-interface UserInfo {
+type UserInfo = {
   fullName: string;
   id: number;
   isDead: boolean;
@@ -15,24 +15,25 @@ interface UserInfo {
   death: number;
   assist: number;
   place: number;
-}
+  score: number;
+};
 
-interface TeamList {
+export type ITeamList = {
   isWin: boolean;
   players: Array<UserInfo>;
-}
+};
 
-export const TeamList: React.FC<TeamList> = ({ isWin, players }) => {
-  const addUser = (id: GridRowId) => console.log(`add user to ${id}`);
+export const TeamList: React.FC<ITeamList> = ({ isWin, players }) => {
+  // const addUser = (id: GridRowId) => console.log(`add user to ${id}`);
 
   return (
-    <Box sx={{ height: 400, width: '100%', background: isWin ? 'rgba(0, 255, 0, 0.2)' : 'rgba(255, 0, 0, 0.2)' }}>
+    <Box sx={{ height: '100vh', width: '100%', background: isWin ? 'rgba(0, 255, 0, 0.2)' : 'rgba(255, 0, 0, 0.2)' }}>
       <DataGrid
-        rows={_.sortBy(players, 'place')}
+        rows={_.sortBy(players, 'score').reverse()}
         columns={[
           {
-            field: 'place',
-            headerName: 'Place',
+            field: 'score',
+            headerName: 'Score',
             flex: 1,
             sortable: false,
             filterable: false,
@@ -51,24 +52,12 @@ export const TeamList: React.FC<TeamList> = ({ isWin, players }) => {
           },
           {
             field: 'isDead',
-            headerName: '',
+            headerName: 'Status',
             sortable: false,
             filterable: false,
             flex: 1,
             renderCell: (params: GridRenderCellParams<UserInfo>) => (
               <>{params.row.isDead && <FaceRetouchingOffIcon style={{ color: 'rgba(255, 0, 0, 0.6)' }} />}</>
-            ),
-          },
-          {
-            field: 'actions',
-            headerName: 'Actions',
-            flex: 1,
-            sortable: false,
-            filterable: false,
-            renderCell: (params: GridRenderCellParams<UserInfo>) => (
-              <IconButton onClick={() => addUser(params.row.id)} disabled={params.row.isFriend}>
-                <AddIcon />
-              </IconButton>
             ),
           },
         ]}

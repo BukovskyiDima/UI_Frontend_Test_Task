@@ -1,0 +1,215 @@
+{
+  "battleScore": [{
+    "id": 123,
+    "firstTeam": {
+      "isWin": true,
+      "players": [
+        {
+          "fullName": "Full player name 1",
+          "id": 1,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 5
+        },
+        {
+          "fullName": "Full player name 2",
+          "id": 2,
+          "isDead": true,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 6
+        },
+        {
+          "fullName": "Full player name 3",
+          "id": 3,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 2
+        },
+        {
+          "fullName": "Full player name 4",
+          "id": 4,
+          "isDead": true,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 8
+        },
+        {
+          "fullName": "Full player name 5",
+          "id": 5,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 9
+        },
+        {
+          "fullName": "Full player name 6",
+          "id": 6,
+          "isDead": true,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 1
+        },
+        {
+          "fullName": "Full player name 7",
+          "id": 7,
+          "isDead": true,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 7
+        },
+        {
+          "fullName": "Full player name 8",
+          "id": 8,
+          "isDead": false,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 4
+        },
+        {
+          "fullName": "Full player name 9",
+          "id": 9,
+          "isDead": true,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 3
+        },
+        {
+          "fullName": "Full player name 10",
+          "id": 10,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 10
+        }
+      ]
+    },
+    "secondTeam": {
+      "isWin": false,
+      "players": [
+        {
+          "fullName": "Full player name 1",
+          "id": 11,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 5
+        },
+        {
+          "fullName": "Full player name 2",
+          "id": 12,
+          "isDead": true,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 6
+        },
+        {
+          "fullName": "Full player name 3",
+          "id": 13,
+          "isDead": true,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 2
+        },
+        {
+          "fullName": "Full player name 4",
+          "id": 14,
+          "isDead": true,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 8
+        },
+        {
+          "fullName": "Full player name 5",
+          "id": 15,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 9
+        },
+        {
+          "fullName": "Full player name 6",
+          "id": 16,
+          "isDead": false,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 1
+        },
+        {
+          "fullName": "Full player name 7",
+          "id": 17,
+          "isDead": true,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 7
+        },
+        {
+          "fullName": "Full player name 8",
+          "id": 18,
+          "isDead": false,
+          "isFriend": true,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 4
+        },
+        {
+          "fullName": "Full player name 9",
+          "id": 19,
+          "isDead": false,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 3
+        },
+        {
+          "fullName": "Full player name 10",
+          "id": 20,
+          "isDead": true,
+          "isFriend": false,
+          "kill": 12,
+          "death": 3,
+          "assist": 16,
+          "score": 10
+        }
+      ]
+    }
+  }]
+}
